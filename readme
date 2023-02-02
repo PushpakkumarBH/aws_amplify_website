@@ -1,14 +1,17 @@
-# Commands to put in EC2
+#Commands to put in EC2
 sudo yum update
-# For Sql-client
+#For Sql-client
 sudo yum install mysql
 
-# For python and related frameworks
+#For python and related frameworks
 
-sudo apt-get install python3
-sudo apt-get install python3-flask
-sudo apt-get install python3-pymysql
-sudo apt-get install python3-boto3
+sudo yum install python3
+pip install flask
+pip install pymysql
+pip install boto3
+python3 -m venv myenv
+sudo -E ~/aws-live/myenv/bin/python3 EmpApp.py
 
-# for running application
-sudo python3 Empapp.py
+
+#for running application
+sudo python3 EmpApp.py or python3 EmpApp.py

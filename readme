@@ -1,6 +1,7 @@
-sudo apt-get update
+# Commands to put in EC2
+sudo yum update
 # For Sql-client
-sudo apt-get install mysql-client
+sudo yum install mysql
 
 # For python and related frameworks
 
